@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-image: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .feature {
+      flex: 0 1 calc(30% - 20px);
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Add more styles for new sections as needed */
+    .services {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Add more styles for new features as needed */
+    .services .feature {
+      flex: 0 1 calc(30% - 20px);
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Media Query for Mobile Devices */
+    @media screen and (max-width: 480px) {
+      .feature, .services .feature {
+        flex: 0 1 calc(100% - 20px);
+      }
+    }
+
+    /* Contact Section Styles */
+    section.contact {
+      background-color: #333;
+      color: #fff;
+      padding: 40px;
+    }
+
+    section.contact a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    section.contact a.email {
+      background-color: #3498db;
+    }
+
+    section.contact a.linkedin {
+      background-color: #0077b5;
+    }
+
+    section.contact a:hover {
+      background-color: #555;
+    }
+  </style>
+  <title>Our Landing Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Satyajeet</h1>
+    <p>Welcome to our website</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo purus nec felis commodo hendrerit. Integer sit amet dui ultrices, consectetur massa non, accumsan ligula. Sed dignissim urna vel dolor facilisis fermentum.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="project-1.jpeg" alt="Project 1" style="width: 100%; border-radius: 8px;">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="feature">
+      <img src="project-6.jpeg" alt="Project 2" style="width: 100%; border-radius: 8px;">
+      <h3>Project 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="feature">
+      <img src="project-5.jpeg" alt="Project 3" style="width: 100%; border-radius: 8px;">
+      <h3>Project 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+
+  <!-- Add more sections as needed -->
+  <section class="services">
+    <h2>Services</h2>
+    <p>Explore our services...</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="w1.jpg" alt="Service 1" style="width: 100%; border-radius: 8px;">
+      <h3>Web Design</h3>
+      <p>Web design refers to the design of websites. It usually refers to the user experience aspects of website development rather than software development. </p>
+    </div>
+    <div class="feature">
+      <img src="w2.jpg" alt="Service 2" style="width: 100%; border-radius: 8px;">
+      <h3>Web Applications</h3>
+      <p>A web application is software that runs in your web browser. Businesses have to exchange information and deliver services remotely. </p>
+    </div>
+    <div class="feature">
+      <img src="w3.jpeg" alt="Service 3" style="width: 100%; border-radius: 8px;">
+      <h3>Responsive Design</h3>
+      <p> Responsive web design is about creating web pages that look good on all devices! A responsive web design will automatically adjust </p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us. You can email us or connect on LinkedIn.</p>
+
+    <div>
+      <a href="mailto:satyajeetnikam27@gmail.com" class="email">Email Us</a>
+      <a href="https://www.linkedin.com/in/satya27/" class="linkedin">Connect on LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Satyajeet. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
